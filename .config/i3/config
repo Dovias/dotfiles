@@ -115,6 +115,8 @@ client.background               #191724
 
 bar {
   position top
+  separator_symbol " "
+  tray_padding 3
   status_command i3status
   colors {
     statusline #e0def4
