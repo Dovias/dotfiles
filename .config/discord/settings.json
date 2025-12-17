@@ -4,11 +4,11 @@
   "enableHardwareAcceleration": true,
   "chromiumSwitches": {},
   "asyncVideoInputDeviceInit": false,
-  "IS_MAXIMIZED": true,
+  "IS_MAXIMIZED": false,
   "IS_MINIMIZED": false,
   "WINDOW_BOUNDS": {
-    "x": 1291,
-    "y": 46,
+    "x": 555,
+    "y": 93,
     "width": 1248,
     "height": 1373
   },
