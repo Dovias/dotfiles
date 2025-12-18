@@ -15,31 +15,36 @@ order += "ethernet _first_"
 order += "disk /"
 order += "load"
 order += "memory"
+order += "volume master"
 order += "tztime local"
 
 ethernet _first_ {
-        format_up = "󰲝 (%speed)"
+        format_up = "󰲝  %speed"
         format_down = "󰲛"
 }
 
-battery all {
-        format = "%status %percentage %remaining"
-}
-
 disk "/" {
-        format = " %avail"
+        format = "  %avail"
 }
 
 load {
-        format = " %1min\%"
+        format = "  %1min\%"
 }
 
 memory {
-        format = " %used/%available"
+        format = "  %used/%available"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
+volume master {
+        format = "  %volume"
+        format_muted = "  %volume"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
 tztime local {
-        format = " %Y-%m-%d  %H:%M:%S "
+        format = "  %Y-%m-%d    %H:%M:%S  "
 }
