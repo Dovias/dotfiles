@@ -40,7 +40,7 @@ tiling_drag modifier titlebar
 
 # kill focused window
 bindsym Mod4+q kill
-bindsym Mod4+Tab exec rofi options -theme gruvbox-catpuccin -show drun
+bindsym Mod4+Tab exec rofi options -theme gruvbox-catpuccin -show drun -show-icons
 
 bindsym Mod4+Left focus left
 bindsym Mod4+Down focus down
